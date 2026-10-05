@@ -20,7 +20,7 @@ const SITE_SETTINGS = {
   'redirectDelaySeconds': 15,
   'siteUrl': 'https://gadanieotklik.online/',
   'whatsappMessage': 'Здравствуйте, хочу обратиться к вам за помощью',
-  'telegramEnabled': 1,
+  'telegramEnabled': true,
   'telegramNickname': 'Elviramag781',
   'yandexMetrikaId': '113164118',
   'psychicImageURL': 'https://gadanieotklik.online/photo-cb9d5dda603348a0b30d056d4d2ea96c.jpg',
@@ -36,12 +36,12 @@ const PHONE_DIGITS = (SITE_SETTINGS.phoneNumber || '').replace(/\D/g, '');
 const WHATSAPP_MESSAGE=PSYCHIC_NAME ? `Здравствуйте, ${PSYCHIC_NAME}! Хочу обратиться к вам за помощью.` : 'Здравствуйте, хочу обратиться к вам за помощью.';
 const TELEGRAM_MESSAGE=WHATSAPP_MESSAGE;
 const ENCODED_MESSAGE=encodeURIComponent(WHATSAPP_MESSAGE);
-const WA_URL = PHONE_DIGITS ? `https://wa.me/${PHONE_DIGITS}?text=${ENCODED_MESSAGE}` : '';
-const FALLBACK_WA_URL=PHONE_DIGITS?`https://wa.me/${PHONE_DIGITS}`:'https://wa.me/79957261844';
+const WA_URL ="https://wa.me/79034359423?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E.";
+const FALLBACK_WA_URL="https://wa.me/79034359423?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E.";
 const TARGET_WA_URL=WA_URL||FALLBACK_WA_URL;
 const TELEGRAM_ENABLED=Number(SITE_SETTINGS.telegramEnabled||0)===1;
 const TELEGRAM_NICKNAME=(SITE_SETTINGS.telegramNickname||'').replace(/^@+/,'');
-const TELEGRAM_URL=TELEGRAM_ENABLED&&TELEGRAM_NICKNAME?`https://t.me/${TELEGRAM_NICKNAME}?text=${ENCODED_MESSAGE}`:'';
+const TELEGRAM_URL="https://t.me/Elviramag781?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E.";
 
 const SITE_STATS_TRACKER_CONFIG = {
     projectUrl: "https://stats.72-56-243-254.sslip.io",
@@ -519,12 +519,13 @@ footer{background:#0f0a0f;padding:40px 0;text-align:center;border-top:1px solid 
 .studio-photo-backdrop{position:absolute;inset:7px;border-radius:50%;overflow:hidden;z-index:1;background:center/cover no-repeat url("https://gadanieotklik.online/photo-cb9d5dda603348a0b30d056d4d2ea96c.jpg");filter:blur(8px);opacity:.85;pointer-events:none}
 .hero-img #psychicImage{box-sizing:border-box!important;object-fit:contain!important;object-position:center!important;padding:12%!important;background:transparent!important}
 </style>
+<!-- CONVERSIA_CONTACT_CONTRACT_V1 eaf7b0c359a34cbe981fa2d545a28b76b3fa407223bbdb3d227433b4cf426139 -->
 </head>
 <body>
 
 <div class="sticky-messengers" id="stickyMessengers">
-<a data-msg-url="https://wa.me/79957261844?text=Здравствуйте, Ельвира! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 WhatsApp</a>
-<a data-msg-url="https://t.me/Ilariyamag0001" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Telegram</a>
+<a data-msg-url="https://wa.me/79034359423?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E. Ельвира! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 WhatsApp</a>
+<a data-msg-url="https://t.me/Elviramag781" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Telegram</a>
 </div>
 
 <section class="hero">
@@ -548,12 +549,12 @@ footer{background:#0f0a0f;padding:40px 0;text-align:center;border-top:1px solid 
 <div class="trust-item"><span style="font-size:1.5rem">🔒</span><span style="font-size:0.85rem;font-weight:600">Полная секретность</span></div>
 </div>
 <div class="hero-cta">
-<a data-msg-url="https://wa.me/79957261844?text=Здравствуйте, {{NAME}}! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 Получить помощь</a>
-<a data-msg-url="https://t.me/Ilariyamag0001" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Написать в Telegram</a>
+<a data-msg-url="https://wa.me/79034359423?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E. {{NAME}}! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 Получить помощь</a>
+<a data-msg-url="https://t.me/Elviramag781" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Написать в Telegram</a>
 </div>
-<a href="tel:+79957261844" class="phone-link" id="phoneLink">
+<a href="tel:+79034359423" class="phone-link" id="phoneLink">
 <span style="font-size:1.5rem">📞</span>
-<span id="phoneDisplay">+7 (995) 726-18-44</span>
+<span id="phoneDisplay">+7 (903) 435-94-23</span>
 </a>
 <p style="margin-top:12px;font-size:0.9rem">💜 <strong style="color:#f59e0b">Обратите внимание!</strong> На сегодня запланировано только 8 ритуалов — свободных мест почти не осталось!</p>
 <div class="address-info" id="addressInfo">
@@ -843,8 +844,8 @@ footer{background:#0f0a0f;padding:40px 0;text-align:center;border-top:1px solid 
 <h2>Не оставайтесь со страданием — напишите мне сейчас</h2>
 <p style="font-size:1.2rem;color:#f5f5f7">Чем дольше вы ждёте — тем сильнее он привыкает к другой. Чем дольше тяните — тем сложнее вернуть. Напишите мне сегодня. Я проведу первичную проверку и честно скажу — можно ли вернуть, сколько примерно времени это займёт и сколько будет стоить. Никаких туманных обещаний — только честный расклад по вашей ситуации.</p>
 <div class="cta-buttons">
-<a data-msg-url="https://wa.me/79957261844?text=Здравствуйте, Ельвира! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 Написать в WhatsApp</a>
-<a data-msg-url="https://t.me/Ilariyamag0001" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Написать в Telegram</a>
+<a data-msg-url="https://wa.me/79034359423?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%95%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B7%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E. Ельвира! Нужна помощь с отношениями." class="btn btn-wa" target="_blank" rel="noopener" data-messenger="wa">💬 Написать в WhatsApp</a>
+<a data-msg-url="https://t.me/Elviramag781" class="btn btn-tg" target="_blank" rel="noopener" data-messenger="tg">✈️ Написать в Telegram</a>
 </div>
 <p style="margin-top:15px;color:#a8a8b8">🕑 Отвечаю обычно в течение 10-15 минут • Веду работу каждый день с 9:00 до 23:00</p>
 <div class="urgency">
@@ -880,7 +881,7 @@ footer{background:#0f0a0f;padding:40px 0;text-align:center;border-top:1px solid 
 <p>ОГРНИП: 322165800739421</p>
 <p>ИНН: 772614589230</p>
 <p>Адрес: 420111, г. Казань, ул. Баумана, д. 22, офис 307</p>
-<p>Телефон: +7 (904) 612-73-58</p>
+<p>Телефон: +7 (903) 435-94-23</p>
 <p>Email: hello@gadaiu.ru</p>
 </div>
 <p style="font-size:0.9rem;color:#a8a8b8;font-style:italic;margin-bottom:30px">Дата последнего обновления: 18 октября 2025 года</p>
@@ -910,7 +911,7 @@ footer{background:#0f0a0f;padding:40px 0;text-align:center;border-top:1px solid 
 <p>Согласно ФЗ-152 вы вправе получать сведения об обработке своих данных и запрашивать их изменение либо удаление.</p>
 <h2>8. Данные для связи</h2>
 <div class="company-info">
-<p>Телефон: <a href="tel:+79957261844" style="color:#10b981;text-decoration:none">+7 (995) 726-18-44</a></p>
+<p>Телефон: <a href="tel:+79034359423" style="color:#10b981;text-decoration:none">+7 (903) 435-94-23</a></p>
 <p>Email: <a href="mailto:hello@gadanieotklik.online" style="color:#10b981;text-decoration:none">hello@gadanieotklik.online</a></p>
 <p>Сайт: <a href="https://gadanieotklik.online" style="color:#10b981;text-decoration:none" target="_blank">gadanieotklik.online</a></p>
 </div>
